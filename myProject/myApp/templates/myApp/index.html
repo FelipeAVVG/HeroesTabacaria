@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    <!-- Link para o CSS correto -->
+    <link rel="stylesheet" href="{% static 'myApp/css/style.css' %}">
+    
+    <title>Heroes Tabacaria | e-commerce</title>
+</head>
+<body>
+
+    <!-- Inicio nav -->
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <img src="{% static 'myApp/img/logo.png' %}" alt="logo">
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="https://www.mercadolivre.com.br/pagina/felipealvesyou" target="_blank">Loja</a></li>
+            <li><a href="https://wa.me/5561982812826?text=Gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- Fim nav -->
+
+    <!-- Inicio header -->
+    <header>
+        <div class="header-inner-container">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h1>Heroes Tabacaria</h1>
+                    <p>
+                        A Heroes Tabacaria chega ao mercado como a loja ideal para você. 
+                        Damos dicas sobre como manter seu narguile em ótimo estado, 
+                        instruções de limpeza para todo o seu setup e como aproveitar uma sessão de alta qualidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Fim header -->
+
+    <!-- Inicio main container -->
+    <main>
+        <!-- Bloco 1 (Cinza) -->
+        <div class="fundo-cinza">
+            <div class="header-inner-container">
+                <div class="header-bottom-side">
+                    <div class="header-bottom-side-left">
+                        <img src="{% static 'myApp/img/steam/narg_completo.jpg' %}" alt="Narguile completo">
+                    </div>
+                    <div class="cuidados-narguile">
+                        <h3>Cuidados com seus produtos</h3>
+                        <p>Todo momento deve ser aproveitado, desde a manutenção até a hora da degustação da sua sessão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco 2 (Branco) -->
+        <div class="fundo-branco">
+            <div class="header-inner-container">
+                <div class="header-bottom-side">
+                    <div class="cuidados-narguile">
+                        <h3>Como limpar seu narguile?</h3>
+                        <p>Manter seu narguile limpo aumenta sua durabilidade e melhora a qualidade da sessão.</p>
+                    </div>
+                    <div class="header-bottom-side-left">
+                        <img src="{% static 'myApp/img/main/limpeza_narg.jpg' %}" alt="Limpeza do narguile">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Essências -->
+        <div class="page-inner-container">
+            <h3 class="section-title">Essências da Semana</h3>
+            <div class="subtitle-underline"></div>
+            <div class="colunas colunas-4">
+                <div class="produto">
+                    <img src="{% static 'myApp/img/essencia/magic_space_purple.jpg' %}" alt="Magic Space Purple">
+                    <p class="nome-produto">Magic Space Purple</p>
+                </div>
+                <div class="produto">
+                    <img src="{% static 'myApp/img/essencia/magic_pera_morango.webp' %}" alt="Magic Pera e Morango">
+                    <p class="nome-produto">Magic Pera e Morango</p>
+                </div>
+                <div class="produto">
+                    <img src="{% static 'myApp/img/essencia/magic_space_lemon.jpg' %}" alt="Magic Space Lemon">
+                    <p class="nome-produto">Magic Space Lemon</p> 
+                </div>
+                <div class="produto">
+                    <img src="{% static 'myApp/img/essencia/magic_space_peach.webp' %}" alt="Magic Space Peach">
+                    <p class="nome-produto">Magic Space Peach</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Fim main container -->
+
+    <footer>
+        <div class="top-bar">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="mailto:tabacariaheroes@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
