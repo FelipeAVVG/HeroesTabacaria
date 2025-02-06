@@ -19,7 +19,7 @@
     <nav>
         <div class="logo">
             <a href="#">
-                <img src="{% static "myApp/img/logo.png" %}" alt="logo">
+                <img src="{% static 'myApp/img/logo.png' %}" alt="logo">
             </a>
         </div>
         <ul class="menu">
@@ -56,8 +56,8 @@
                 <div class="header-inner-container">
                     <div class="header-bottom-side">
                         <div class="header-bottom-side-left">
-                            <img src="{% static "myApp/img/steam/narg_completo.jpg" %}" alt="Descrição da imagem" class="img-narguile">
-                        </div>
+                    <img src="{% static 'myApp/img/steam/narg_completo.jpg' %}" alt="Descrição da imagem" class="img-narguile">
+                                        </div>
                         <div class="cuidados-narguile">
                             <h3>Cuidados com seus produtos</h3>
                             <p>
@@ -79,48 +79,47 @@
                             </p>
                         </div>
                         <div class="header-bottom-side-left">
-                            <img src="{% static "myApp/img/aluminio/alum_eleventen.jpg" %} alt="Limpeza do narguile" class="img-narguile">
-                        </div>
-                    </div>
+                    <img src="{% static 'myApp/img/main/limpeza_narg.jpg' %}" alt="Limpeza do narguile" class="img-narguile">
                 </div>
             </div>
-        
-            <!-- Bloco 3 (Cinza) -->
-            <div class="fundo-cinza">
-                <div class="header-inner-container">
-                    <div class="header-bottom-side">
-                        <div class="header-bottom-side-left">
-                            <img src="{% static "myApp/img/main/preparacao.jpg" %}"" alt="Preparação da sessão" class="img-narguile">
-                        </div>
-                        <div class="cuidados-narguile">
-                            <h3>Carvão e Essencia</h3>
-                            <p>
-                                Escolha o melhor carvão e essência para ter uma sessão perfeita. Veja nossas dicas!
-                            </p>
-                        </div>
-                    </div>
+        </div>
+
+
+    <!-- Bloco 3: Carvão e Essência (Cinza) -->
+    <div class="bloco-sessao">
+        <div class="header-inner-container">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <img src="{% static 'myApp/img/main/preparacao.jpg' %}" alt="Preparação da sessão" class="img-narguile">
+                </div>
+                <div class="conteudo-sessao">
+                    <h3>Carvão e Essência</h3>
+                    <p>
+                        Escolha o melhor carvão e essência para ter uma sessão perfeita. Veja nossas dicas!
+                    </p>
                 </div>
             </div>
-        
-            <!-- Bloco 4 (Branco) -->
-            <div class="fundo-branco">
-                <div class="header-inner-container">
-                    <div class="header-bottom-side">
-                        <div class="cuidados-narguile">
-                            <h3>Montagem correta do narguile</h3>
-                            <p>
-                                Uma montagem correta evita vazamentos e melhora o fluxo. Confira o passo a passo!
-                            </p>
-                        </div>
-                        <div class="header-bottom-side-left">
-                            <img src="{% static "myApp/img/main/montagem_narg.png" %}" alt="Montagem do narguile" class="img-narguile">
-                        </div>
-                    </div>
+        </div>
+    </div>
+
+    <!-- Bloco 4: Montagem do Narguile (Branco) -->
+    <div class="bloco-montagem">
+        <div class="header-inner-container">
+            <div class="header-bottom-side">
+                <div class="conteudo-montagem">
+                    <h3>Montagem correta do narguile</h3>
+                    <p>
+                        Uma montagem correta evita vazamentos e melhora o fluxo. Confira o passo a passo!
+                    </p>
+                </div>
+                <div class="header-bottom-side-left">
+                    <img src="{% static 'myApp/img/main/montagem_narg.png' %}" alt="Montagem do narguile" class="img-narguile">
                 </div>
             </div>
-        </main>
-        
-    </main>
+        </div>
+    </div>
+</main>
+
     
 
         <div>
@@ -129,19 +128,19 @@
                 <div class="subtitle-underline"></div>
                 <div class="colunas colunas-4">
                     <div class="produto">
-                        <img src="img/essencia/magic_space_purple.jpg" alt="">
+                        <img src="{% static "myApp/img/essencia/magic_space_purple.jpg" %}" alt="">
                         <p class="nome-produto">Magic Space Purple</p>
                     </div>
                     <div class="produto">
-                        <img src="img/essencia/magic_pera_morango.webp" alt="">
+                        <img src="{% static "myApp/img/essencia/magic_pera_morango.webp" %}" alt="">
                         <p class="nome-produto">Magic Pera e Morango</p>
                     </div>
                     <div class="produto">
-                        <img href="https://produto.mercadolivre.com.br/MLB-3841753207-essencias-vendidas-por-unidade-escolha-sabores-_JM" src="img/essencia/magic_space_lemon.jpg" alt="">
+                        <img href="https://produto.mercadolivre.com.br/MLB-3841753207-essencias-vendidas-por-unidade-escolha-sabores-_JM" src="{% static "myApp/img/essencia/magic_space_lemon.jpg" %}" alt="">
                         <p class="nome-produto">Magic Space Lemon</p> 
                     </div>
                     <div class="produto">
-                        <img src="img/essencia/magic_space_peach.webp" alt="">
+                        <img src="{% static "myApp/img/essencia/magic_space_peach.webp" %}" alt="">
                         <p class="nome-produto">Magic Space Peach</p>
                     </div>
                 </div>
@@ -152,19 +151,19 @@
                 <div class="subtitle-underline"></div>
                 <div class="colunas colunas-4">
                     <div class="produto">
-                        <img src="img/steam/empire_preto.jpg" alt="">
+                        <img src="{% static "myApp/img/steam/empire_preto.jpg" %}" alt="">
                         <p class="nome-produto">Steam Empire</p>
                     </div>
                     <div class="produto">
-                        <img src="img/rosh/prohookah.jpg" alt="">
+                        <img src="{% static "myApp/img/rosh/prohookah.jpg" %}" alt="">
                         <p class="nome-produto">Steam Triton Azul Claro</p>
                     </div>
                     <div class="produto">
-                        <img src="img/prato/anubis_cinza.jpg" alt="">
+                        <img src="{% static "myApp/img/prato/anubis_cinza.jpg" %}" alt="">
                         <p class="nome-produto">Prato Anubis Cinza</p>
                     </div>
                     <div class="produto">
-                        <img src="img/steam/velvet_rosa.jpg" alt="">
+                        <img src="{% static "myApp/img/steam/velvet_rosa.jpg" %}" alt="">
                         <p class="nome-produto">Steam Velvet Rosa</p>
                     </div>
                 </div>
