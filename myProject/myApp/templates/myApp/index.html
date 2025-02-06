@@ -19,13 +19,13 @@
     <nav>
         <div class="logo">
             <a href="#">
-                <img src="{% static 'myApp/img/logo.png' %}" alt="logo">
+                <img src="{% static "myApp/img/logo.png" %}" alt="logo">
             </a>
         </div>
         <ul class="menu">
             <li><a href="#">Início</a></li>
             <li><a href="https://www.mercadolivre.com.br/pagina/felipealvesyou" target="_blank">Loja</a></li>
-            <li><a href="https://wa.me/5561982812826?text=Gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank">Contato</a></li>
+            <li><a href="https://wa.me/5561982812826?text=Gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank" class="numero-telefone">Contato</a></li>
         </ul>
     </nav>
     <!-- Fim nav -->
@@ -50,69 +50,136 @@
 
     <!-- Inicio main container -->
     <main>
-        <!-- Bloco 1 (Cinza) -->
-        <div class="fundo-cinza">
-            <div class="header-inner-container">
-                <div class="header-bottom-side">
-                    <div class="header-bottom-side-left">
-                        <img src="{% static 'myApp/img/steam/narg_completo.jpg' %}" alt="Narguile completo">
+        <main>
+            <!-- Bloco 1 (Cinza) -->
+            <div class="fundo-cinza">
+                <div class="header-inner-container">
+                    <div class="header-bottom-side">
+                        <div class="header-bottom-side-left">
+                            <img src="{% static "myApp/img/steam/narg_completo.jpg" %}" alt="Descrição da imagem" class="img-narguile">
+                        </div>
+                        <div class="cuidados-narguile">
+                            <h3>Cuidados com seus produtos</h3>
+                            <p>
+                                Todo momento deve ser aproveitado, desde a manutenção até a hora da degustação da sua sessão.
+                            </p>
+                        </div>
                     </div>
-                    <div class="cuidados-narguile">
-                        <h3>Cuidados com seus produtos</h3>
-                        <p>Todo momento deve ser aproveitado, desde a manutenção até a hora da degustação da sua sessão.</p>
+                </div>
+            </div>
+        
+            <!-- Bloco 2 (Branco) -->
+            <div class="fundo-branco">
+                <div class="header-inner-container">
+                    <div class="header-bottom-side">
+                        <div class="cuidados-narguile">
+                            <h3>Como limpar seu narguile?</h3>
+                            <p>
+                                Manter seu narguile limpo aumenta sua durabilidade e melhora a qualidade da sessão. Saiba como fazer a limpeza correta!
+                            </p>
+                        </div>
+                        <div class="header-bottom-side-left">
+                            <img src="{% static "myApp/img/aluminio/alum_eleventen.jpg" %} alt="Limpeza do narguile" class="img-narguile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Bloco 3 (Cinza) -->
+            <div class="fundo-cinza">
+                <div class="header-inner-container">
+                    <div class="header-bottom-side">
+                        <div class="header-bottom-side-left">
+                            <img src="{% static "myApp/img/main/preparacao.jpg" %}"" alt="Preparação da sessão" class="img-narguile">
+                        </div>
+                        <div class="cuidados-narguile">
+                            <h3>Carvão e Essencia</h3>
+                            <p>
+                                Escolha o melhor carvão e essência para ter uma sessão perfeita. Veja nossas dicas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Bloco 4 (Branco) -->
+            <div class="fundo-branco">
+                <div class="header-inner-container">
+                    <div class="header-bottom-side">
+                        <div class="cuidados-narguile">
+                            <h3>Montagem correta do narguile</h3>
+                            <p>
+                                Uma montagem correta evita vazamentos e melhora o fluxo. Confira o passo a passo!
+                            </p>
+                        </div>
+                        <div class="header-bottom-side-left">
+                            <img src="{% static "myApp/img/main/montagem_narg.png" %}" alt="Montagem do narguile" class="img-narguile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </main>
+    
+
+        <div>
+            <div class="page-inner-container">
+                <h3 class="section-title">Essencias da semana</h3>
+                <div class="subtitle-underline"></div>
+                <div class="colunas colunas-4">
+                    <div class="produto">
+                        <img src="img/essencia/magic_space_purple.jpg" alt="">
+                        <p class="nome-produto">Magic Space Purple</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/essencia/magic_pera_morango.webp" alt="">
+                        <p class="nome-produto">Magic Pera e Morango</p>
+                    </div>
+                    <div class="produto">
+                        <img href="https://produto.mercadolivre.com.br/MLB-3841753207-essencias-vendidas-por-unidade-escolha-sabores-_JM" src="img/essencia/magic_space_lemon.jpg" alt="">
+                        <p class="nome-produto">Magic Space Lemon</p> 
+                    </div>
+                    <div class="produto">
+                        <img src="img/essencia/magic_space_peach.webp" alt="">
+                        <p class="nome-produto">Magic Space Peach</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-inner-container">
+                <h4 class="section-title">Novidades na loja</h4>
+                <div class="subtitle-underline"></div>
+                <div class="colunas colunas-4">
+                    <div class="produto">
+                        <img src="img/steam/empire_preto.jpg" alt="">
+                        <p class="nome-produto">Steam Empire</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/rosh/prohookah.jpg" alt="">
+                        <p class="nome-produto">Steam Triton Azul Claro</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/prato/anubis_cinza.jpg" alt="">
+                        <p class="nome-produto">Prato Anubis Cinza</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/steam/velvet_rosa.jpg" alt="">
+                        <p class="nome-produto">Steam Velvet Rosa</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Bloco 2 (Branco) -->
-        <div class="fundo-branco">
-            <div class="header-inner-container">
-                <div class="header-bottom-side">
-                    <div class="cuidados-narguile">
-                        <h3>Como limpar seu narguile?</h3>
-                        <p>Manter seu narguile limpo aumenta sua durabilidade e melhora a qualidade da sessão.</p>
-                    </div>
-                    <div class="header-bottom-side-left">
-                        <img src="{% static 'myApp/img/main/limpeza_narg.jpg' %}" alt="Limpeza do narguile">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Seção de Essências -->
-        <div class="page-inner-container">
-            <h3 class="section-title">Essências da Semana</h3>
-            <div class="subtitle-underline"></div>
-            <div class="colunas colunas-4">
-                <div class="produto">
-                    <img src="{% static 'myApp/img/essencia/magic_space_purple.jpg' %}" alt="Magic Space Purple">
-                    <p class="nome-produto">Magic Space Purple</p>
-                </div>
-                <div class="produto">
-                    <img src="{% static 'myApp/img/essencia/magic_pera_morango.webp' %}" alt="Magic Pera e Morango">
-                    <p class="nome-produto">Magic Pera e Morango</p>
-                </div>
-                <div class="produto">
-                    <img src="{% static 'myApp/img/essencia/magic_space_lemon.jpg' %}" alt="Magic Space Lemon">
-                    <p class="nome-produto">Magic Space Lemon</p> 
-                </div>
-                <div class="produto">
-                    <img src="{% static 'myApp/img/essencia/magic_space_peach.webp' %}" alt="Magic Space Peach">
-                    <p class="nome-produto">Magic Space Peach</p>
-                </div>
-            </div>
-        </div>
-
+            
     </main>
     <!-- Fim main container -->
 
     <footer>
         <div class="top-bar">
             <ul>
-                <li><a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href="mailto:tabacariaheroes@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
+                <li><a href="https://produto.mercadolivre.com.br/MLB-3841780679-narguile-mani-sultan-cores-variadas-_JM" target="_blank" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="mailto:tabacariaheroes@gmail.com" aria-label="Gmail"><ion-icon name="mail"></ion-icon></a></li>
             </ul>
         </div>
     </footer>
